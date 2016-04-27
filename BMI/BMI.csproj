@@ -115,10 +115,15 @@
     <None Include="BMI_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\BadgeLogo.scale-100.jpg" />
     <Content Include="Assets\BadgeLogo.scale-100.png" />
+    <Content Include="Assets\BadgeLogo.scale-125.jpg" />
     <Content Include="Assets\BadgeLogo.scale-125.png" />
+    <Content Include="Assets\BadgeLogo.scale-150.jpg" />
     <Content Include="Assets\BadgeLogo.scale-150.png" />
+    <Content Include="Assets\BadgeLogo.scale-200.jpg" />
     <Content Include="Assets\BadgeLogo.scale-200.png" />
+    <Content Include="Assets\BadgeLogo.scale-400.jpg" />
     <Content Include="Assets\BadgeLogo.scale-400.png" />
     <Content Include="Assets\LockScreenLogo.scale-100.png" />
     <Content Include="Assets\LockScreenLogo.scale-125.png" />
@@ -151,6 +156,11 @@
     <Content Include="Assets\logo75.png" />
     <Content Include="Assets\logo88.png" />
     <Content Include="Assets\logo96.png" />
+    <Content Include="Assets\logo96.scale-100.png" />
+    <Content Include="Assets\logo96.scale-125.png" />
+    <Content Include="Assets\logo96.scale-150.png" />
+    <Content Include="Assets\logo96.scale-200.png" />
+    <Content Include="Assets\logo96.scale-400.png" />
     <Content Include="Assets\splash.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-125.png" />
