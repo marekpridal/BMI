@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="#FF000000" ScrollViewer.HorizontalScrollBarVisibility="Visible">
+    <Grid Background="#FF000000" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Disabled">
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
                 <VisualState x:Name="wideState">
@@ -20,10 +20,10 @@
                         <AdaptiveTrigger MinWindowWidth="0" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="textBlock.Width" Value="300"/>
+                        <Setter Target="textBlock.Width" Value="280"/>
                         <Setter Target="textBlock.Height" Value="90"/>
                         <Setter Target="textBlock.Margin" Value="50,10,0,0"/>
-                        <Setter Target="textBlock.FontSize" Value="50"/>
+                        <Setter Target="textBlock.FontSize" Value="46"/>
                         <Setter Target="textBlock1.Width" Value="250"/>
                         <Setter Target="textBlock1.Margin" Value="50,380,0,0"/>
                         <Setter Target="textBlock1.FontSize" Value="30"/>
