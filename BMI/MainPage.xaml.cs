@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Globalization;
 
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -51,7 +52,7 @@ namespace BMI
                 }
                 else if (vypocet <= 30)
                 {
-                    textBlock1.Foreground = new SolidColorBrush(Windows.UI.Colors.Yellow);
+                    textBlock1.Foreground = new SolidColorBrush(Windows.UI.Colors.YellowGreen);
                     textBlock1.Text = "Váš BMI =" + vypocet.ToString() + ", trpíte nadváhou";
                 }
                 else if (vypocet <= 35)

@@ -45,9 +45,9 @@
                 </VisualStateGroup>
             </VisualStateManager.VisualStateGroups>
             <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Výpočet BMI" VerticalAlignment="Top" Height="154" Width="630" FontSize="85" Foreground="White" Margin="64,32,0,0"/>
-            <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="64,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="80" Width="150" PlaceholderText="Výška" FontSize="40" Foreground="White" RenderTransformOrigin="0.517,0.943" InputScope="Number"/>
+            <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="64,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="80" Width="150" PlaceholderText="Výška" FontSize="40" Foreground="White" RenderTransformOrigin="0.517,0.943" InputScope="Number" AutomationProperties.LocalizedLandmarkType=""/>
             <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="334,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="80" Width="184" PlaceholderText="Váha" FontSize="40" Foreground="White" RenderTransformOrigin="0.517,0.943" InputScope="Number"/>
             <Button x:Name="button" Content="Vypočítat" HorizontalAlignment="Left" Margin="162,380,0,0" VerticalAlignment="Top" Height="90" Width="222" FontSize="30" Click="button_Click" Background="#66FFFFFF" RequestedTheme="Dark" Foreground="#F6FFFFFF"/>
             <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="665,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="131" Width="859" FontSize="36" TextAlignment="Center" RenderTransformOrigin="-5.085,1.9"/>
-        </Grid>
+    </Grid>
 </Page>
