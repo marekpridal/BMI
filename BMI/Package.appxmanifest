@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="58448MarekPidal.BMIkalkulaka" Publisher="CN=5D8DF891-AF1D-443F-8C9B-6A754F8C2245" Version="1.1.12.0" />
+  <Identity Name="58448MarekPidal.BMIkalkulaka" Publisher="CN=5D8DF891-AF1D-443F-8C9B-6A754F8C2245" Version="1.1.14.0" />
   <mp:PhoneIdentity PhoneProductId="fed01129-9087-49a9-90e7-42fe61263977" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>BMI kalkulačka</DisplayName>

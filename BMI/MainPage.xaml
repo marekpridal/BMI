@@ -6,48 +6,74 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-        <Grid Background="#FF000000">
-            <VisualStateManager.VisualStateGroups>
-                <VisualStateGroup>
-                    <VisualState x:Name="wideState">
-                        <VisualState.StateTriggers>
-                            <AdaptiveTrigger MinWindowWidth="640" />
-                        </VisualState.StateTriggers>
-                        <VisualState.Setters>
-                            <Setter Target="textBlock1.Width" Value="450"/>
-                            <Setter Target="textBlock1.Margin" Value="550,200"/>
-                            <Setter Target="textBlock1.FontSize" Value="40"/>
-                        </VisualState.Setters>
-                    </VisualState>
-                    <VisualState x:Name="narrowState">
-                        <VisualState.StateTriggers>
-                            <AdaptiveTrigger MinWindowWidth="0" />
-                        </VisualState.StateTriggers>
-                        <VisualState.Setters>
-                            <Setter Target="textBlock.Width" Value="280"/>
-                            <Setter Target="textBlock.Height" Value="90"/>
-                            <Setter Target="textBlock.Margin" Value="50,10,0,0"/>
-                            <Setter Target="textBlock.FontSize" Value="46"/>
-                            <Setter Target="textBlock1.Width" Value="250"/>
-                            <Setter Target="textBlock1.Margin" Value="50,380,0,0"/>
-                            <Setter Target="textBlock1.FontSize" Value="30"/>
-                            <Setter Target="textBox1.Width" Value="180"/>
-                            <Setter Target="textBox1.Height" Value="70"/>
-                            <Setter Target="textBox1.Margin" Value="50,200,0,0"/>
-                            <Setter Target="textBox2.Width" Value="180"/>
-                            <Setter Target="textBox2.Height" Value="70"/>
-                            <Setter Target="textBox2.Margin" Value="50,100,0,0"/>
-                            <Setter Target="button.Width" Value="150"/>
-                            <Setter Target="button.Height" Value="55"/>
-                            <Setter Target="button.Margin" Value="50,300,0,0"/>
-                        </VisualState.Setters>
-                    </VisualState>
-                </VisualStateGroup>
-            </VisualStateManager.VisualStateGroups>
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Výpočet BMI" VerticalAlignment="Top" Height="154" Width="630" FontSize="85" Foreground="White" Margin="64,32,0,0"/>
-            <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="64,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="80" Width="150" PlaceholderText="Výška" FontSize="40" Foreground="White" RenderTransformOrigin="0.517,0.943" InputScope="Number" AutomationProperties.LocalizedLandmarkType=""/>
-            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="334,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="80" Width="184" PlaceholderText="Váha" FontSize="40" Foreground="White" RenderTransformOrigin="0.517,0.943" InputScope="Number"/>
-            <Button x:Name="button" Content="Vypočítat" HorizontalAlignment="Left" Margin="162,380,0,0" VerticalAlignment="Top" Height="90" Width="222" FontSize="30" Click="button_Click" Background="#66FFFFFF" RequestedTheme="Dark" Foreground="#F6FFFFFF"/>
-            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="665,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="131" Width="859" FontSize="36" TextAlignment="Center" RenderTransformOrigin="-5.085,1.9"/>
+    <Grid Background="#FF000000">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="wideState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="640" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="textBlock.FontSize" Value="100"/>
+                        <Setter Target="textBlock1.Width" Value="550"/>
+                        <Setter Target="textBlock1.FontSize" Value="45"/>
+                        <Setter Target="textBlock1.Height" Value="150"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="FullHD">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="360" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="textBlock.Width" Value="280"/>
+                        <Setter Target="textBlock.Height" Value="70"/>
+                        <Setter Target="textBlock.Margin" Value="50,10,0,0"/>
+                        <Setter Target="textBlock.FontSize" Value="47"/>
+                        <Setter Target="textBlock1.Width" Value="220"/>
+                        <Setter Target="textBlock1.Height" Value="150"/>
+                        <Setter Target="textBlock1.Margin" Value="50,370,0,0"/>
+                        <Setter Target="textBlock1.FontSize" Value="35"/>
+                        <Setter Target="textBox1.Width" Value="220"/>
+                        <Setter Target="textBox1.Height" Value="70"/>
+                        <Setter Target="textBox1.Margin" Value="50,200,0,0"/>
+                        <Setter Target="textBox2.Width" Value="220"/>
+                        <Setter Target="textBox2.Height" Value="70"/>
+                        <Setter Target="textBox2.Margin" Value="50,100,0,0"/>
+                        <Setter Target="button.Width" Value="150"/>
+                        <Setter Target="button.Height" Value="55"/>
+                        <Setter Target="button.Margin" Value="50,300,0,0"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="smalldisplay">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="textBlock.Width" Value="280"/>
+                        <Setter Target="textBlock.Height" Value="90"/>
+                        <Setter Target="textBlock.Margin" Value="50,10,0,0"/>
+                        <Setter Target="textBlock.FontSize" Value="46"/>
+                        <Setter Target="textBlock1.Width" Value="220"/>
+                        <Setter Target="textBlock1.Height" Value="150"/>
+                        <Setter Target="textBlock1.Margin" Value="50,370,0,0"/>
+                        <Setter Target="textBlock1.FontSize" Value="29"/>
+                        <Setter Target="textBox1.Width" Value="220"/>
+                        <Setter Target="textBox1.Height" Value="70"/>
+                        <Setter Target="textBox1.Margin" Value="50,200,0,0"/>
+                        <Setter Target="textBox2.Width" Value="220"/>
+                        <Setter Target="textBox2.Height" Value="70"/>
+                        <Setter Target="textBox2.Margin" Value="50,100,0,0"/>
+                        <Setter Target="button.Width" Value="150"/>
+                        <Setter Target="button.Height" Value="55"/>
+                        <Setter Target="button.Margin" Value="50,300,0,0"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Výpočet BMI" VerticalAlignment="Top" Height="154" Width="630" FontSize="85" Foreground="White" Margin="64,32,0,0"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="64,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="80" Width="150" PlaceholderText="Výška" FontSize="40" Foreground="White" RenderTransformOrigin="0.517,0.943" InputScope="Number" AutomationProperties.LocalizedLandmarkType=""/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="334,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="80" Width="184" PlaceholderText="Váha" FontSize="40" Foreground="White" RenderTransformOrigin="0.517,0.943" InputScope="Number"/>
+        <Button x:Name="button" Content="Vypočítat" HorizontalAlignment="Left" Margin="607,222,0,0" VerticalAlignment="Top" Height="80" Width="184" FontSize="30" Click="button_Click" Background="#66FFFFFF" RequestedTheme="Dark" Foreground="#F6FFFFFF"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="64,374,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="112" Width="536" FontSize="36" TextAlignment="Center" RenderTransformOrigin="-5.085,1.9"/>
     </Grid>
 </Page>
