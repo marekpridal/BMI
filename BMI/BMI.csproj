@@ -98,6 +98,7 @@
     </Content>
     <None Include="BMI_StoreKey.pfx" />
     <None Include="project.json" />
+    <PRIResource Include="en-US\Resources.resw" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
